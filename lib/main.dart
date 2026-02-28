@@ -1,3 +1,4 @@
+import 'package:addis_movies/auth/auth_gate.dart';
 import 'package:addis_movies/auth/login_or_register_page.dart';
 import 'package:addis_movies/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.dark(primary: Colors.green),
       ),
 
-      home: const LoginOrRegisterPage(),
+      home: const AuthGate(),
     );
   }
 }

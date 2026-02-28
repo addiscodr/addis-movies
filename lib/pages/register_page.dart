@@ -1,3 +1,4 @@
+import 'package:addis_movies/auth/auth_service.dart';
 import 'package:addis_movies/widgets/my_button.dart';
 import 'package:addis_movies/widgets/my_textfield.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,15 @@ class _LoginPageState extends State<RegisterPage> {
     super.dispose();
   }
 
-  void register() {}
+  void register() {
+    // get auth service
+    final auth = AuthService();
+
+    auth.signUpWithEmailPassword(
+      _emailController.text.trim(),
+      _pwController.text.trim(),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {

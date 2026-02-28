@@ -1,3 +1,4 @@
+import 'package:addis_movies/auth/auth_service.dart';
 import 'package:addis_movies/utils/text.dart';
 import 'package:addis_movies/widgets/top_rated_movies.dart';
 import 'package:addis_movies/widgets/trending_movies.dart';
@@ -70,6 +71,12 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
+  void logout() {
+    // auth service
+    final auth = AuthService();
+    auth.signOut();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,6 +85,10 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.transparent,
         title: ModifiedText(text: 'Addis Movies', color: Colors.red, size: 30),
         centerTitle: true,
+        actions: [
+          // logout button
+          IconButton(onPressed: logout, icon: Icon(Icons.logout)),
+        ],
       ),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
