@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "531236669326",
+    "project_id": "addis-movies",
+    "storage_bucket": "addis-movies.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531236669326:android:49e45c453d3892ea0486df",
+        "android_client_info": {
+          "package_name": "com.addiscodr.addis_movies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmoQILq1eb7q96iFGaAd-45iGHXosCZ2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
