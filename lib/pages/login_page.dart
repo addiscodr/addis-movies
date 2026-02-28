@@ -1,4 +1,3 @@
-import 'package:addis_movies/auth/auth_service.dart';
 import 'package:addis_movies/widgets/my_button.dart';
 import 'package:addis_movies/widgets/my_textfield.dart';
 import 'package:flutter/material.dart';
@@ -24,24 +23,7 @@ class _LoginPageState extends State<LoginPage> {
     super.dispose();
   }
 
-  void login(BuildContext context) {
-    // auth service
-    final authService = AuthService();
-
-    // try login
-    try {
-      authService.signInWithEmailPassword(
-        _emailController.text.trim(),
-        _pwController.text.trim(),
-      );
-    } catch (e) {
-      // catch errors, if any
-      showDialog(
-        context: context,
-        builder: (context) => AlertDialog(title: Text(e.toString())),
-      );
-    }
-  }
+  void login() {}
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(height: 25),
 
             // login button
-            MyButton(text: "Login", onTap: () => login(context)),
+            MyButton(text: "Login", onTap: login),
             const SizedBox(height: 15),
 
             // register now
