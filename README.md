@@ -1,4 +1,4 @@
-# addis_movies
+# addis-movies
 
 A new Flutter project.
 
