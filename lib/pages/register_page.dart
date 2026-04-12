@@ -42,70 +42,72 @@ class _LoginPageState extends State<RegisterPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // logo
-            const Text(
-              'Addis Movies',
-              style: TextStyle(color: Colors.red, fontSize: 36),
-            ),
-            const SizedBox(height: 50),
-            // welcome back message
-            const Text(
-              'Create an account...',
-              style: TextStyle(color: Colors.white54, fontSize: 21),
-            ),
-            const SizedBox(height: 25),
-
-            // email textfield
-            MyTextfield(
-              hintText: "Email",
-              obscureText: false,
-              controller: _emailController,
-            ),
-            const SizedBox(height: 12),
-
-            // pw textfield
-            MyTextfield(
-              hintText: "Password",
-              obscureText: true,
-              controller: _pwController,
-            ),
-            const SizedBox(height: 12),
-            // pw textfield
-            MyTextfield(
-              hintText: "Confirm Password",
-              obscureText: true,
-              controller: _confirmPwController,
-            ),
-            const SizedBox(height: 25),
-
-            // register button
-            MyButton(text: "Register", onTap: register),
-            const SizedBox(height: 15),
-
-            // login now
-            Container(
-              margin: EdgeInsets.only(right: 30),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Text("Have an account? "),
-                  GestureDetector(
-                    onTap: widget.onTap,
-                    child: Text(
-                      "Login",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blue,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // logo
+              const Text(
+                'Addis Movies',
+                style: TextStyle(color: Colors.red, fontSize: 36),
+              ),
+              const SizedBox(height: 50),
+              // welcome back message
+              const Text(
+                'Create an account...',
+                style: TextStyle(color: Colors.white54, fontSize: 21),
+              ),
+              const SizedBox(height: 25),
+          
+              // email textfield
+              MyTextfield(
+                hintText: "Email",
+                obscureText: false,
+                controller: _emailController,
+              ),
+              const SizedBox(height: 12),
+          
+              // pw textfield
+              MyTextfield(
+                hintText: "Password",
+                obscureText: true,
+                controller: _pwController,
+              ),
+              const SizedBox(height: 12),
+              // pw textfield
+              MyTextfield(
+                hintText: "Confirm Password",
+                obscureText: true,
+                controller: _confirmPwController,
+              ),
+              const SizedBox(height: 25),
+          
+              // register button
+              MyButton(text: "Register", onTap: register),
+              const SizedBox(height: 15),
+          
+              // login now
+              Container(
+                margin: EdgeInsets.only(right: 30),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text("Have an account? "),
+                    GestureDetector(
+                      onTap: widget.onTap,
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
