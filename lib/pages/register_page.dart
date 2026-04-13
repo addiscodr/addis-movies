@@ -52,13 +52,7 @@ class _LoginPageState extends State<RegisterPage> {
                 style: TextStyle(color: Colors.red, fontSize: 36),
               ),
               const SizedBox(height: 50),
-              // welcome back message
-              const Text(
-                'Create an account...',
-                style: TextStyle(color: Colors.white54, fontSize: 21),
-              ),
-              const SizedBox(height: 25),
-          
+
               // email textfield
               MyTextfield(
                 hintText: "Email",
@@ -66,7 +60,7 @@ class _LoginPageState extends State<RegisterPage> {
                 controller: _emailController,
               ),
               const SizedBox(height: 12),
-          
+
               // pw textfield
               MyTextfield(
                 hintText: "Password",
@@ -81,11 +75,11 @@ class _LoginPageState extends State<RegisterPage> {
                 controller: _confirmPwController,
               ),
               const SizedBox(height: 25),
-          
+
               // register button
               MyButton(text: "Register", onTap: register),
               const SizedBox(height: 15),
-          
+
               // login now
               Container(
                 margin: EdgeInsets.only(right: 30),

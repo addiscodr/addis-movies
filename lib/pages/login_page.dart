@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(height: 50),
             // welcome back message
             const Text(
-              'Welcome back...',
+              'Welcome back',
               style: TextStyle(color: Colors.white54, fontSize: 21),
             ),
             const SizedBox(height: 25),
