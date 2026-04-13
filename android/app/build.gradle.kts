@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.addiscodr.addis_movies"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = flutter.targetSdkVersion
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
