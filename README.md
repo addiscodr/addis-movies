@@ -1,7 +1,7 @@
 # Movies Recommendation
 
 
-## Getting Started
+### Getting Started
 
 This project is a starting point for a Flutter application.
 
@@ -10,7 +10,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-## Click Thumbnail to View App Demo
+### Click Thumbnail to View App Demo
 [![Watch Demo](https://img.youtube.com/vi/FmylRnjKkgs/0.jpg)](https://www.youtube.com/watch?v=FmylRnjKkgs)
   
 
