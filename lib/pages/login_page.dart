@@ -54,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
           children: [
             // logo
             const Text(
-              'Addis Movies',
+              'Sign In',
               style: TextStyle(color: Colors.red, fontSize: 36),
             ),
             const SizedBox(height: 50),
